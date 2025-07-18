@@ -8,13 +8,14 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0e0e0e;
+      background: #8ed6ee;
       color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      text-align: center;
     }
 
     h1 {
@@ -27,41 +28,45 @@
 
     .button {
       display: inline-block;
-      padding: 10px 20px;
-      margin: 10px 0;
-      background-color: #00c853;
+      margin: 20px 0;
+      background-color: #004b65;
       color: white;
+      padding: 10px 20px;
       text-decoration: none;
       border-radius: 5px;
+      font-weight: bold;
     }
 
     form {
-      margin-top: 20px;
+      background-color: #ffffff10;
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(5px);
+      box-shadow: 0 0 10px #00000033;
     }
 
-    input, button {
-      margin: 8px;
+    input {
+      margin: 10px 0;
       padding: 10px;
-      border: none;
+      width: 100%;
+      max-width: 300px;
       border-radius: 5px;
+      border: none;
     }
 
     button {
-      background-color: #00bfa5;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #004b65;
       color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
       cursor: pointer;
-      transition: background 0.3s;
     }
 
     button:hover {
-      background-color: #17a9ff;
-    }
-
-    .footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.9rem;
-      color: #777;
+      background-color: #003446;
     }
   </style>
 </head>
@@ -70,15 +75,14 @@
   <p>India's Best Free Minecraft Hosting. Fast, Easy, Reliable.</p>
   <a class="button" href="#">Coming Soon</a>
 
-  <form action="https://formsubmit.co/8b0798590db5d46d0ce00c6825d5c85
-" method="POST">
+  <form action="https://formsubmit.co/8b0798590db5d46d0ce00c6825d5c85" method="POST">
+    <!-- Redirect to thankyou page -->
+    <input type="hidden" name="_next" value="https://voxelbyte77.github.io/voxelbyte/thankyou.html">
     <input type="text" name="Username" placeholder="Minecraft Username" required><br>
     <input type="email" name="Email" placeholder="Email Address" required><br>
     <input type="text" name="Server Type" placeholder="Vanilla / Forge / PaperMC" required><br>
     <input type="text" name="Version" placeholder="1.20.4, 1.21 etc." required><br>
     <button type="submit">Request Server</button>
   </form>
-
-  <div class="footer">© 2025 VoxelByte.net</div>
 </body>
 </html>
